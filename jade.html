@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>to-do List</title>
+    <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="css/jquery.mobile.css">
+    <link rel="stylesheet" href="css/todo.css">
+    <script src="js/jquery.js"> </script>
+    <script src="js/jquery.mobile.js"></script>
+    <script src="js/todo.js"></script>
+  </head>
+  <body>
+    <div id="main" data-role="page">
+      <div data-role="header" data-position="fixed">
+        <h1>To Do List</h1><a id="add" href="#" data-icon="plus" class="ui-btn-right">Add</a><a id="cancel" href="#" data-icon="delete" class="ui-btn-right">Cancel</a>
+      </div>
+      <div data-role="content">
+        <div id="newitem">
+          <input id="text" type="text" placeholder="Enter To Do item"><a id="save" href="#" data-role="button" data-inline="true" data-icon="plus">Save</a>
+        </div>
+        <ul id="todolist" data-role="listview"></ul>
+      </div>
+    </div>
+  </body>
+</html>
